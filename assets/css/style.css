@@ -1,9 +1,11 @@
+/* add general style for the page */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* add style for the bdy section */
 body {
     display: block;
     margin: 5px;
@@ -11,7 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
+/* define navbar id and attributes */
 #navBar {
     display: flex;
     flex-direction: row;
@@ -19,6 +21,8 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     align-items:center;
   }
+
+  /* define attributes for h1 */
   #navBar h1 {
     width: 30%;
     font-weight: 600;
@@ -26,18 +30,24 @@ body {
     font-size: 1.9em;
     margin:20px;
   }
+
+  /* define navigation id */
     #navigation {
     display: flex;
     width: 40%;
     align-items: center;
     justify-content: space-evenly;
   }
+
+  /* custom text format for anchor inside navigation */
   #navigation a {
     cursor: pointer;
     text-decoration: none;
     font-weight: 800;
     color:rgb(243, 109, 0);
   }
+
+  /* define avatar class and image properties */
   .avatar {
     display: flex;
     justify-content: flex-end;
@@ -51,6 +61,7 @@ body {
     max-width: 40%;
    }
 
+   /* define banner attributes and img attributes */
    .hero-banner {
     background-repeat: no-repeat;
     background-position: center;
@@ -65,7 +76,7 @@ body {
     align-items: flex-end;
     /* margin-bottom: 20px; */
    }
-
+  /* define style for the text inside the banner */
    #sub-text1, #sub-text2 {
     background-color: rgba(255,255,255,0.8);
     padding: 20px;
@@ -90,7 +101,7 @@ body {
     margin: 0px 0px;
     color:white;
   }
-
+  /* define the general text attributes and h3 attributes for general text */
   #general-text{
     background-color: rgba(211, 211, 211, 0.8);
     padding: 20px;
@@ -109,14 +120,14 @@ body {
     text-align:justify;
     font-style: italic;
   }
-
+/* define spaced text id to have  better spaging between text lines */
   #spaced-text{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
   }
-
+  /* define the page section attributes and section elements */
   .page-section{
     margin: 0px 5%;
   }
@@ -154,6 +165,7 @@ body {
    ;
   }
 
+  /* define links to images for each website */
   #website1 {
     grid-area: website1;
     background-image: url("../images/horiseon.jpg");
@@ -169,6 +181,7 @@ body {
     background-image: url("../images/furniture.jpg");
   }
 
+  /* define the text that will be on top of each website image */
   .grid-text {
     background-color: rgba(0,0,0,0.7);
     padding: 10px;
@@ -183,6 +196,7 @@ body {
     text-decoration: none;
   }
 
+    /* define medeia attributes */
    @media only screen and (max-width: 1000px) {
     #navigation{
       display: none;
